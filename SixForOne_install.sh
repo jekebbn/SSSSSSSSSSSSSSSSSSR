@@ -864,7 +864,7 @@ web_download() {
   [[ ! -d "${web_dir}" ]] && mkdir "${web_dir}"
   while [[ ! -f "${web_dir}/web.zip" ]]; do
     echo -e "${Tip}伪装网站未下载或下载失败,请选择下面的任意一个进行下载:
-      ${Info}1. https://templated.co/intensify
+      ${Info}1. https://www.free-css.com/assets/files/free-css-templates/download/page270
       ${Info}2. https://templated.co/binary
       ${Info}3. https://templated.co/retrospect
       ${Info}4. https://templated.co/spatial
@@ -882,7 +882,7 @@ web_download() {
     read -rp "$(echo -e "${Tip}请输入你要下载的网站的数字:")" aNum
     case $aNum in
     1)
-      wget -O ${web_dir}/web.zip --no-check-certificate https://templated.co/intensify/download
+      wget -O ${web_dir}/web.zip --no-check-certificate https://www.free-css.com/assets/files/free-css-templates/download/page270
       ;;
     2)
       wget -O ${web_dir}/web.zip --no-check-certificate https://templated.co/binary/download
